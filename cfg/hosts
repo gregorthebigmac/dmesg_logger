@@ -2,11 +2,12 @@
 # with a '#' are ignored by the program, so feel free to put comments in here,
 # as they will not be parsed by the program. That said, the format is as follows:
 
-# IP.address:port username password
+# IP.address:port username password /path/to/log/dir
 
 # Example: Let's say your remote machine has the IP address of 10.0.0.1 on
-# port 22, and your username is hank, and your password is got_dang_it! If this
-# was the case, your actual entry would look like this:
+# port 22, and your username is hank, and your password is got_dang_it! and the
+# remote path was /home/hank/dmesg_logs/
+# If this was the case, your actual entry would look like this:
 
 10.0.0.1:22 hank got_dang_it!
 
