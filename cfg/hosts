@@ -1,0 +1,17 @@
+# This file is where you will place your remote SSH info. All lines which begin
+# with a '#' are ignored by the program, so feel free to put comments in here,
+# as they will not be parsed by the program. That said, the format is as follows:
+
+# IP.address:port username password
+
+# Example: Let's say your remote machine has the IP address of 10.0.0.1 on
+# port 22, and your username is hank, and your password is got_dang_it! If this
+# was the case, your actual entry would look like this:
+
+10.0.0.1:22 hank got_dang_it!
+
+# NOTE: The port is by default 22. If you didn't change your port, then it's
+# probably port 22. Yes, your password will be in plaintext here. My personal
+# recommendation is to put your password in this file right before you use it,
+# and removing it once you're done. DON'T JUST LEAVE IT THERE!
+# That's a security risk!
