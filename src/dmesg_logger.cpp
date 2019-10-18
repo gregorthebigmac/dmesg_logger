@@ -21,21 +21,21 @@ command cmd;
 
 int main() {
 	// This will run 300 times, with a 1 sec delay, for a grand total of 5 min
-	// before quitting. This will result in 300 sequentially numbered text files.
-	int log_num = 0;
-	for (int i = 0; i < 300; i++) {
+	// before quitting. This will result in 300 sequentially numbered text
+	// files ranging from 001-300.
+	for (int i = 1; i < 301; i++) {
 		terminal_feedback.clear();
 		error_list.clear();
-		string str_log_num = num_to_str(log_num);
+		string log_num = num_to_str(i);
 		
-		if (log_num < 10)
-			str_log_num = "00" + str_log_num;
-		else if (log_num < 100)
-			str_log_num = "0" + str_log_num;
+		if (i < 10)
+			log_num = "00" + log_num;
+		else if (i < 100)
+			log_num = "0" + log_num;
 		
-		string log_filename = "dmesg_log_" + str_log_num + ".txt";
+		string log_filename = "dmesg_log_" + log_num + ".txt";
 		cmd.exec("dmesg", terminal_feedback, error_list);
-		if (error_list.size > 0) {
+		if (error_list.size() > 0) {
 			cout << "ERROR: " << endl;
 			for (int j = 0; j < error_list.size(); j++) {
 				cout << error_list[j];

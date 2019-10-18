@@ -12,7 +12,7 @@ COMPILER_FLAGS = -w
 # Not using LINKER_FLAGS
 
 # OBJ_NAME specifies the name of our executable
-OBJ_NAME = test
+OBJ_NAME = dmesg_logger
 
 # This is the target that compiles our executable
 all : $(OBJS)

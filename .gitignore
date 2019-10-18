@@ -33,3 +33,9 @@
 
 # Do not track command/
 command/*
+
+# Do not track log files
+data/dmesg*
+
+# Do not track binary
+dmesg_logger
