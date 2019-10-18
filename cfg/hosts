@@ -9,7 +9,7 @@
 # remote path was /home/hank/dmesg_logs/
 # If this was the case, your actual entry would look like this:
 
-10.0.0.1:22 hank got_dang_it!
+10.0.0.1:22 hank got_dang_it! /home/hank/dmesg_logs/
 
 # NOTE: The port is by default 22. If you didn't change your port, then it's
 # probably port 22. Yes, your password will be in plaintext here. My personal
