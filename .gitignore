@@ -39,3 +39,6 @@ data/dmesg*
 
 # Do not track binary
 dmesg_logger
+
+# Do not track VScode settings
+.vscode/
